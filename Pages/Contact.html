@@ -1,0 +1,141 @@
+<!--Matthew Conway, Final Project, Southern Illinois University, Dev: 5/6/22 Tested: 5/6/22-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name+"description" content="Contact Us">
+	<meta name="keywords" content="bikes, bicycles, bikeshop, bike store, bike, electricbike, pettal bike">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="../CSS/slicknav.css">
+	<link rel="stylesheet" href="../CSS/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="../JavaScript/rollover.js"></script>
+	<script src="../JavaScript/myrandomjavastuff2"></script>
+</head>
+<body>
+	<div Menu>
+   		<ul id="image_rollovers" class="menu">
+			<li><a class="active" href="../index.html"> <img src="../images/Site-Logo/SiteLogo1.png"  Class="HomeImage" alt="Site Logo" 
+			id="../images/Site-Logo/SiteLogo2.png" width="80px" height="60px"> </a></li>
+        	<li><a class="hovertext" href="../index.html">Home</a></li>
+            <li><a class="hovertext" href="../Pages/PC_Repair.html">PC Repair</a></li>
+            <li><a class="hovertext" href="../Pages/Mobile_Repair.html">Mobile Repair</a></li>
+            <li><a class="hovertext" href="../Pages/Data_Transfer.html">Data Transfers</a></li>
+            <li><a class="hovertext" href="../Pages/Services.html">Services</a></li>
+            <li><a class="current" href="../Pages/Contact.html">Contact Us</a></li>
+        </ul>
+	</div>
+	
+	<center>
+	<form name="myform" class="idkwhat" action="../Pages/survey_data.html" method="get" style="background-color: #6f2232">
+	
+		<h2>Contact Us!</h2>
+		<label for="email">Email address:</label>
+		<input type="email" name="email" id="email" autofocus required placeholder="exampleemail@mail.com"><br>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" required ><br>
+		<label for="firstname">First Name:</label>
+		<input type="text" name="firstname" id="firstname" required placeholder="Firstname"><br>
+		<label for="lastname">Full name:</label>
+		<input type="text" name="lastname" id="lastname" required placeholder="Lastname"><br>
+		
+		<h2>Your Information</h2>
+		<label for="address">Address:</label>
+		<input type="text" name="address" id="address" required placeholder="Your Street Address"><br>
+		<label for="city">City:</label>
+		<input type="text" name="city" id="city" required placeholder="Your City"><br>
+		<label for="zip">Zip code:</label>
+		<input type="text" name="zip" id="zip" required placeholder="XXXXX"
+			pattern="\d{5}" title="Must be 99999"><br>
+		<label for="state">State:</label>
+		<select id="state" name="state">
+			<option value="noselection">Please Select State</option>
+			<option value="alabama">Alabama</option>
+			<option value="alaska">Alaska</option>
+			<option value="arizona">Arazona</option>
+			<option value="arkansas">Arkansas</option>
+			<option value="california">California</option>
+			<option value="colorado">Colorado</option>
+			<option value="connecticut">Connecticut</option>
+			<option value="delaware">Delaware</option>
+			<option value="florida">Florida</option>
+			<option value="georgia">Georgia</option>
+			<option value="hawaii">Hawaii</option>
+			<option value="idaho">Idaho</option>
+			<option value="illinois">Illinois</option>
+			<option value="indiana">Indiana</option>
+			<option value="iowa">Iowa</option>
+			<option value="kansas">Kansas</option>
+			<option value="kentucky">Kentucky</option>
+			<option value="louisiana">Louisiana</option>
+			<option value="maine">Maine</option>
+			<option value="maryland">Maryland</option>
+			<option value="massachusetts">Massachusetts</option>
+			<option value="michigan">Michigan</option>
+			<option value="minnesota">Minnesota</option>
+			<option value="mississippi">Mississippi</option>
+			<option value="missouri">Missouri</option>
+			<option value="montana">Montana</option>
+			<option value="nebraska">Nebraska</option>
+			<option value="nevada">Nevada</option>
+			<option value="new hampshire">New Hampshire</option>
+			<option value="new jersey">New Jersey</option>
+			<option value="new mexico">New Mexico</option>
+			<option value="new york">New York</option>
+			<option value="north carolina">North Carolina</option>
+			<option value="north dakota">North Dakota</option>
+			<option value="ohio">Ohio</option>
+			<option value="oklahoma">Oklahoma</option>
+			<option value="oregon">Oregon</option>
+			<option value="pennsylvania">Pennsylvania</option>
+			<option value="rhode island">Rhode Island</option>
+			<option value="south carolina">South Carolina</option>
+			<option value="south dakota">South Dakota</option>
+			<option value="tennessee">Tennessee</option>
+			<option value="texas">Texas</option>
+			<option value="utah">Utah</option>
+			<option value="vermont">Vermont</option>
+			<option value="virginia">Virginia</option>
+			<option value="washington">Washington</option>
+			<option value="washington dc">Washington DC</option>
+			<option value="west virginia">West Virginia</option>
+			<option value="wisconsin">Wisconsin</option>
+			<option value="wyoming">Wyoming</option>
+		</select><br><br>
+
+		
+
+		<label for="phonenumber">Phone Number:</label>
+		<input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7891"><br>
+		<label for="data">Todays Date:</label>
+		<input type="date" id="date" name="date"><br>
+		<label for="message"></label>
+		<textarea id="message" form="myform" rows="10" cols="40" minlength="50" maxlength="200" placeholder="Let us know what you need help with!"></textarea>
+		
+		<h2>What is the reason for your inqury?</h2>
+		<input type="radio" name="inqtype" id="bikes" value="bikes">
+		<label for="bikes">PC Repair:</label><br>
+		<input type="radio" name="inqtype" id="services" value="services">
+		<label for="services">Mobile Repair:</label><br>
+		<input type="radio" name="inqtype" id="question" value="question">
+		<label for="question">Data Recovery:</label><br>
+		<input type="radio" name="inqtype" id="message" value="message">
+		<label for="message">Support:</label><br>
+	
+		
+		<h2></h2>
+		<input type="submit" name="button" id="button" value="Submit">
+		<input type="reset" name="reset" id="reset">
+	</form>
+	</center>
+
+<div scripts>
+   <script src="../JavaScript/jquery.slicknav.js"></script>
+        <script>
+            $('.menu').slicknav();
+        </script>
+</div>
+
+</body>
+</html>
